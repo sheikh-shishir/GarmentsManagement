@@ -203,7 +203,7 @@ public class Main {
             System.out.print("Select an option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -221,11 +221,11 @@ public class Main {
                     double price = scanner.nextDouble();
                     System.out.print("Enter Stock Quantity: ");
                     int stockQuantity = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine();
                     
                     Garment garment = new Garment(id, name, description, size, color, price, stockQuantity);
                     inventory.addGarment(garment);
-                    System.out.println("Garment added successfully!");
+                    System.out.println("Garment added successfully");
                     break;
                     
                 case 2:
